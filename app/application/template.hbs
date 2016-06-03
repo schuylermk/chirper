@@ -10,7 +10,11 @@
         t4t5
       {{/link-to}}
 
-      <button class="chirp">Chirrrop!</button>
+      {{#if addNewChorp}}
+        {{#new-chorp}}{{/new-chorp}}
+      {{else}}
+        <button class="chirp" {{action "newChorp"}}>Chirrrop!</button>
+      {{/if}}
     </nav>
 
   </div>
