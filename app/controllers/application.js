@@ -8,8 +8,9 @@ export default Ember.Controller.extend({
   actions: {
     newChorp: function() {
       this.set('addNewChorp', true);
+    },
+    hideForm: function() {
+      this.set('addNewChorp', false);
     }
   }
-
-
 });

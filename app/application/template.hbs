@@ -12,6 +12,7 @@
 
       {{#if addNewChorp}}
         {{#new-chorp}}{{/new-chorp}}
+        <button class="hide" {{action "hideForm"}}>Chiirrrop, NO!</button>
       {{else}}
         <button class="chirp" {{action "newChorp"}}>Chirrrop!</button>
       {{/if}}
